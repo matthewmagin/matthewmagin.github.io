@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кружок по математике - Matthew Magin</title>
+    <style>
+        /* Computer Modern font (LaTeX стиль) */
+        @import url('https://fonts.cdnfonts.com/css/computer-modern');
+        
+        body {
+            font-family: 'Computer Modern', 'Latin Modern', 'Times New Roman', Times, serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #000000;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .page-title {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            color: #000000;
+        }
+        
+        .activity-info {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .info-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #000000;
+            text-align: center;
+        }
+        
+        .info-details {
+            font-size: 19px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .info-item {
+            margin: 15px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .info-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0000EE;
+            font-weight: bold;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 40px 0 20px 0;
+            color: #000000;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #000000;
+        }
+        
+        .materials-list {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .pdf-link {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            color: #0000EE;
+            text-decoration: none;
+            margin: 15px 0;
+            padding: 12px 20px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            transition: all 0.2s ease;
+            border-left: 4px solid #0000EE;
+        }
+        
+        .pdf-link:hover {
+            background-color: #f0f7ff;
+            padding-left: 25px;
+        }
+        
+        .pdf-icon {
+            color: #cc0000;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #cccccc;
+        }
+        
+        .nav-button {
+            color: #0000EE;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+        }
+        
+        .nav-button:hover {
+            text-decoration: underline;
+            background-color: #f0f0f0;
+        }
+        
+        .update-info {
+            font-size: 14px;
+            color: #666666;
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+                font-size: 16px;
+            }
+            
+            .page-title {
+                font-size: 24px;
+            }
+            
+            .activity-info {
+                padding: 20px;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .nav-button {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-title">Кружок по математике в ФМЛ №30</div>
+    
+    <div class="activity-info">
+        <div class="info-title">Математический кружок для учеников 8-х классов</div>
+        
+        <div class="info-details">
+            <strong>Проводится по средам и субботам в 16:00 (каб. 209 и 302)</strong>
+        </div>
+        
+        <div class="info-item">
+            <strong>Цель кружка:</strong> Развитие математического мышления, подготовка к олимпиадам, углублённое изучение математики
+        </div>
+        
+        <div class="info-item">
+            <strong>Формат занятий:</strong> Решение задач, обсуждение методов, разбор олимпиадных заданий
+        </div>
+        
+        <div class="info-item">
+            <strong>Для кого:</strong> Учащиеся 8 классов ФМЛ №30, интересующиеся математикой
+        </div>
+        
+        <div class="info-item">
+            <strong>Контакты:</strong> Вопросы можно задать до или после занятий, либо по электронной почте
+        </div>
+    </div>
+    
+    <div class="section-title">Материалы для занятий</div>
+    
+    <div class="materials-list">
+        <!-- Серия 1 -->
+        <a href="pdfs/circle/series1.pdf" class="pdf-link">
+            <span class="pdf-icon">[PDF]</span>
+            <span>Серия 1: Введение в комбинаторику</span>
+        </a>
+        
+        <!-- Серия 2 -->
+        <a href="pdfs/circle/series2.pdf" class="pdf-link">
+            <span class="pdf-icon">[PDF]</span>
+            <span>Серия 2: Принцип Дирихле</span>
+        </a>
+        
+        <!-- Серия 3 -->
+        <a href="pdfs/circle/series3.pdf" class="pdf-link">
+            <span class="pdf-icon">[PDF]</span>
+            <span>Серия 3: Геометрические задачи</span>
+        </a>
+        
+        <!-- Серия 4 -->
+        <a href="pdfs/circle/series4.pdf" class="pdf-link">
+            <span class="pdf-icon">[PDF]</span>
+            <span>Серия 4: Числовые последовательности</span>
+        </a>
+        
+        <!-- Серия 5 -->
+        <a href="pdfs/circle/series5.pdf" class="pdf-link">
+            <span class="pdf-icon">[PDF]</span>
+            <span>Серия 5: Логические задачи и инварианты</span>
+        </a>
+        
+        <!-- Серия 6 -->
+        <a href="pdfs/circle/series6.pdf" class="pdf-link">
+            <span class="pdf-icon">[PDF]</span>
+            <span>Серия 6: Теория графов (начало)</span>
+        </a>
+        
+        <!-- Добавляйте новые серии здесь -->
+        
+        <!-- Пример для новой серии -->
+        <!--
+        <a href="pdfs/circle/series7.pdf" class="pdf-link">
+            <span class="pdf-icon">[PDF]</span>
+            <span>Серия 7: Название новой серии</span>
+        </a>
+        -->
+    </div>
+    
+    <div class="update-info">
+        Материалы обновляются регулярно. Последнее обновление: сентябрь 2024
+    </div>
+    
+    <div class="nav-links">
+        <a href="teaching.html" class="nav-button">← К списку преподавательских активностей</a>
+        <a href="index.html" class="nav-button">На главную →</a>
+    </div>
+</body>
+</html>

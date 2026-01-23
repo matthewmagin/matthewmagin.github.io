@@ -13,7 +13,7 @@
             font-size: 18px;
             line-height: 1.6;
             color: #000000;
-            background-color: #f5f5f5; /* Серый фон */
+            background-color: #f5f5f5;
             margin: 0;
             padding: 40px;
             max-width: 900px;
@@ -29,47 +29,51 @@
             color: #000000;
         }
         
+        .teaching-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .teaching-item {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .teaching-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+        }
+        
         .activity-title {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
-            margin-top: 50px;
-            margin-bottom: 20px;
             color: #000000;
-            text-align: center;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #000000;
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            color: #0000EE;
+        }
+        
+        .activity-title:hover {
+            text-decoration: underline;
         }
         
         .activity-description {
-            font-size: 19px;
-            margin-bottom: 30px;
-            text-align: center;
-            line-height: 1.8;
+            font-size: 17px;
+            color: #333333;
+            margin-top: 10px;
+            line-height: 1.5;
         }
         
-        .section-title {
-            font-size: 22px;
-            font-weight: bold;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: #000000;
-        }
-        
-        .pdf-link {
-            display: block;
-            font-size: 18px;
-            color: #0000EE;
-            text-decoration: none;
-            margin: 15px 0;
-            padding: 12px 20px;
-            background-color: #ffffff;
-            border-left: 4px solid #0000EE;
-            transition: all 0.2s ease;
-        }
-        
-        .pdf-link:hover {
-            background-color: #f0f7ff;
-            padding-left: 25px;
+        .activity-details {
+            font-size: 16px;
+            color: #666666;
+            margin-top: 8px;
+            font-style: italic;
         }
         
         .back-link {
@@ -81,11 +85,22 @@
             padding: 10px 20px;
             background-color: #ffffff;
             border-radius: 5px;
+            text-align: center;
+            margin: 50px auto 0;
+            display: block;
+            width: fit-content;
         }
         
         .back-link:hover {
             text-decoration: underline;
             background-color: #f0f0f0;
+        }
+        
+        .empty-message {
+            text-align: center;
+            font-style: italic;
+            color: #666666;
+            margin: 40px 0;
         }
         
         @media (max-width: 768px) {
@@ -98,8 +113,12 @@
                 font-size: 24px;
             }
             
+            .teaching-item {
+                padding: 20px;
+            }
+            
             .activity-title {
-                font-size: 22px;
+                font-size: 20px;
             }
         }
     </style>
@@ -107,21 +126,54 @@
 <body>
     <div class="page-title">Преподавание</div>
     
-    <div class="activity-title">Кружок по математике в ФМЛ №30</div>
-    
-    <div class="activity-description">
-        <strong>Математический кружок для учеников 8-х классов.</strong><br>
-        Проводится по средам и субботам в 16:00 (каб. 209 и 302).
+    <div class="teaching-list">
+        <!-- Активность 1: Кружок в ФМЛ №30 -->
+        <div class="teaching-item">
+            <a href="teaching-circle.html" class="activity-title">
+                Кружок по математике в ФМЛ №30
+            </a>
+            <div class="activity-description">
+                Математический кружок для учеников 8-х классов. Решение олимпиадных задач, развитие математического мышления.
+            </div>
+            <div class="activity-details">
+                Проводится по средам и субботам в 16:00
+            </div>
+        </div>
+        
+        <!-- Активность 2: Университетский курс -->
+        <div class="teaching-item">
+            <a href="teaching-course.html" class="activity-title">
+                Курс "Алгебра и теория чисел"
+            </a>
+            <div class="activity-description">
+                Базовый курс для студентов 2-го года обучения. Основные понятия алгебры и теории чисел.
+            </div>
+            <div class="activity-details">
+                Весенний семестр 2024, читается по понедельникам и четвергам
+            </div>
+        </div>
+        
+        <!-- Активность 3: Подготовка к олимпиадам -->
+        <div class="teaching-item">
+            <a href="teaching-olympiad.html" class="activity-title">
+                Подготовка к Всероссийской олимпиаде
+            </a>
+            <div class="activity-description">
+                Индивидуальные консультации и групповые занятия по подготовке к региональному и заключительному этапам ВсОШ.
+            </div>
+            <div class="activity-details">
+                По договорённости, онлайн и оффлайн
+            </div>
+        </div>
+        
+        <!-- Активность 4: Можно добавить позже -->
+        <div class="teaching-item" style="opacity: 0.7; background-color: #f9f9f9;">
+            <div style="color: #666666; font-style: italic;">
+                Другие преподавательские активности будут добавляться здесь...
+            </div>
+        </div>
     </div>
     
-    <div class="section-title">Материалы для скачивания:</div>
-    
-    <!-- Здесь вы добавляете ссылки на PDF файлы -->
-    <a href="pdfs/circle/series/ser26(a).pdf" class="pdf-link">Серия 26</a>
-    <!-- Добавляйте новые ссылки по мере появления материалов -->
-    
-    <div style="margin-top: 60px; text-align: center;">
-        <a href="index.html" class="back-link">← Вернуться на главную</a>
-    </div>
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
 </body>
 </html>
