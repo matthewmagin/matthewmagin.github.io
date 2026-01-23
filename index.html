@@ -1,29 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Matthew Magin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage of Matthew Magin</title>
     <style>
-        body {font-family: Times; max-width: 800px; margin: 40px auto; padding: 20px;}
-        h1 {font-size: 24px; margin-bottom: 10px;}
-        h2 {font-size: 18px; margin-top: 30px; border-bottom: 1px solid #ccc;}
-        .year {font-weight: bold; margin-top: 20px;}
-        .paper {margin: 15px 0 15px 20px;}
-        .title {font-style: italic;}
-        a {color: #0000EE;}
+        /* Computer Modern font (LaTeX стиль) */
+        @import url('https://fonts.cdnfonts.com/css/computer-modern');
+        
+        body {
+            font-family: 'Computer Modern', 'Latin Modern', 'Times New Roman', Times, serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #000000;
+            background-color: #f5f5f5; /* Серый фон */
+            margin: 0;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        /* Заголовок сайта */
+        .site-title {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+        
+        .email {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333333;
+        }
+        
+        /* Дата обновления */
+        .update-date {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #666666;
+            font-style: italic;
+        }
+        
+        /* Навигация */
+        .navigation {
+            text-align: center;
+            margin: 60px auto;
+            max-width: 600px;
+        }
+        
+        .nav-link {
+            display: block;
+            font-size: 24px;
+            color: #0000EE; /* Синие ссылки */
+            text-decoration: none;
+            margin: 25px 0;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid #cccccc;
+            color: #666666;
+            font-size: 14px;
+        }
+        
+        /* Общие стили для всех страниц */
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #0000EE;
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Стили для внутренних страниц */
+        .page-title {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            color: #000000;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 5px;
+        }
+        
+        .pdf-link {
+            display: block;
+            font-size: 18px;
+            color: #0000EE;
+            text-decoration: none;
+            margin: 15px 0;
+            padding: 12px 20px;
+            background-color: #ffffff;
+            border-left: 4px solid #0000EE;
+            transition: all 0.2s ease;
+        }
+        
+        .pdf-link:hover {
+            background-color: #f0f7ff;
+            padding-left: 25px;
+        }
+        
+        /* Стили для списка публикаций */
+        .publication-item {
+            margin: 25px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .paper-title {
+            font-weight: bold;
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+        
+        .authors {
+            font-style: italic;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+        
+        .journal {
+            color: #006600;
+            margin-bottom: 10px;
+        }
+        
+        .pub-links {
+            margin-top: 10px;
+        }
+        
+        .pub-links a {
+            color: #0000EE;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 16px;
+        }
+        
+        .pub-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+                font-size: 16px;
+            }
+            
+            .site-title {
+                font-size: 26px;
+            }
+            
+            .nav-link {
+                font-size: 20px;
+                padding: 12px;
+            }
+            
+            .page-title {
+                font-size: 24px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Matthew Magin</h1>
-    <p>SPbU<br>Email: m.magin@spbu.ru</p>
+    <div class="site-title">Homepage of Matthew Magin</div>
     
-    <h2>Publications</h2>
+    <div class="email">email: matheusz.magin{at}gmail.com</div>
     
-    <div class="year">2026</div>
-    <div class="paper">
-        <span class="title">Some paper.</span><br>
-        Authors.<br>
-        Journal, vol., pages (year).<br>
-        <a href="pdfs/2026/ser26.pdf" class="pdf-icon">[PDF]</a>
+    <div class="update-date" id="update-date">Last update: Loading...</div>
+    
+    <div class="navigation">
+        <a href="teaching.html" class="nav-link">Преподавание</a>
+        <a href="publications.html" class="nav-link">Публикации</a>
     </div>
+    
+    <div class="footer">
+        <p>Matthew Magin © 2024</p>
+    </div>
+
+    <script>
+        // Автоматическое обновление даты
+        function updateDate() {
+            const now = new Date();
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            };
+            const formatter = new Intl.DateTimeFormat('en-US', options);
+            document.getElementById('update-date').textContent = 
+                'Last update: ' + formatter.format(now);
+        }
+        
+        // Обновляем дату при загрузке и каждую минуту
+        updateDate();
+        setInterval(updateDate, 60000); // Каждую минуту
+    </script>
 </body>
 </html>
