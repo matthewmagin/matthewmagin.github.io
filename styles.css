@@ -170,6 +170,55 @@ a:focus-visible {
     display: inline;
 }
 
+/* Bibliographic records follow Orevkov's plain paragraph layout. */
+.papers-list {
+    color: #000;
+    font-family: Times, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.papers-list .year-header {
+    margin: 1em 0;
+    font-size: 16px;
+}
+
+.paper-record {
+    margin: 1em 0;
+}
+
+.papers-list a {
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+}
+
+/* A compact, conventional list on the teaching directory page. */
+.teaching-page {
+    font-size: 16px;
+    line-height: normal;
+}
+
+.teaching-page .teaching-list {
+    margin: 1em 0;
+    padding-left: 24px;
+}
+
+.teaching-page .teaching-item {
+    margin: 0 0 1em;
+}
+
+.teaching-page .activity-title {
+    font-size: 1em;
+}
+
+.teaching-page .activity-description,
+.teaching-page .activity-details {
+    margin: 0;
+    color: inherit;
+    font-size: inherit;
+    font-style: normal;
+}
+
 .update-info {
     margin-top: 28px;
 }
