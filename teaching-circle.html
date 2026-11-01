@@ -1,168 +1,10 @@
-ц<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кружок по математике - Matthew Magin</title>
-    <style>
-        /* Computer Modern font (LaTeX стиль) */
-        @import url('https://fonts.cdnfonts.com/css/computer-modern');
-        
-        body {
-            font-family: 'Computer Modern', 'Latin Modern', 'Times New Roman', Times, serif;
-            font-size: 18px;
-            line-height: 1.6;
-            color: #000000;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 40px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .page-title {
-            font-size: 28px;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 15px;
-            color: #000000;
-        }
-        
-        .activity-info {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 5px;
-            margin-bottom: 40px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .info-title {
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #000000;
-            text-align: center;
-        }
-        
-        .info-details {
-            font-size: 19px;
-            line-height: 1.8;
-            margin-bottom: 25px;
-            text-align: center;
-        }
-        
-        .info-item {
-            margin: 15px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-        
-        .info-item:before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #0000EE;
-            font-weight: bold;
-        }
-        
-        .section-title {
-            font-size: 22px;
-            font-weight: bold;
-            margin: 40px 0 20px 0;
-            color: #000000;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #000000;
-        }
-        
-        .materials-list {
-            background-color: #ffffff;
-            padding: 25px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .pdf-link {
-            display: flex;
-            align-items: center;
-            font-size: 18px;
-            color: #0000EE;
-            text-decoration: none;
-            margin: 15px 0;
-            padding: 12px 20px;
-            background-color: #f8f8f8;
-            border-radius: 5px;
-            transition: all 0.2s ease;
-            border-left: 4px solid #0000EE;
-        }
-        
-        .pdf-link:hover {
-            background-color: #f0f7ff;
-            padding-left: 25px;
-        }
-        
-        .pdf-icon {
-            color: #cc0000;
-            font-weight: bold;
-            margin-right: 10px;
-            font-size: 16px;
-        }
-        
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #cccccc;
-        }
-        
-        .nav-button {
-            color: #0000EE;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px 20px;
-            background-color: #ffffff;
-            border-radius: 5px;
-            border: 1px solid #cccccc;
-        }
-        
-        .nav-button:hover {
-            text-decoration: underline;
-            background-color: #f0f0f0;
-        }
-        
-        .update-info {
-            font-size: 14px;
-            color: #666666;
-            text-align: center;
-            margin-top: 20px;
-            font-style: italic;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 20px;
-                font-size: 16px;
-            }
-            
-            .page-title {
-                font-size: 24px;
-            }
-            
-            .activity-info {
-                padding: 20px;
-            }
-            
-            .nav-links {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .nav-button {
-                text-align: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="page-title">Кружок по математике в ФМЛ №30</div>
@@ -187,52 +29,52 @@
 
     <div class="materials-list">
         <a href="pdfs/circle/series/a/2027/ser11.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 11: Осенние каникулы. </span>
         </a>
         <a href="pdfs/circle/series/a/2027/ser10.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 10: Наконец, разные неравенства. </span>
         </a>
         <a href="pdfs/circle/series/a/2027/ser9.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 9: Еще раз вокруг поворотной гомотетии. </span>
         </a>
         <a href="pdfs/circle/series/a/2027/ser8.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 8: Которая свалилась во сне. </span>
         </a>
         <a href="pdfs/circle/series/a/2027/ser7.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 7: Сюжет до селе пренебрегаемый. </span>
         </a>
         <a href="pdfs/circle/series/a/2027/ser6.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 6: Стандартная комбинаторика и всякое разное. </span>
         </a>
         <a href="pdfs/circle/series/a/2027/ser5.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 5: Отрешённая. </span>
         </a>
          <a href="pdfs/circle/series/a/2027/ser4.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 4: Попробуем продолжить. </span>
         </a>
         <a href="pdfs/circle/series/a/2027/ser3.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 3: Восполним некоторые важные пробелы </span>
         </a>
         <a href="pdfs/circle/series/a/2027/ser2.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 2: Что-то психологическое...</span>
         </a>
         <a href="pdfs/circle/series/a/2027/ser1.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 1: С новым годом!</span>
         </a>
 
         <a href="pdfs/circle/series/a/LZ_2026.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Летнее задание</span>
         </a>
     </div>   
@@ -242,136 +84,136 @@
     <div class="materials-list">
         <!-- Серия 52    -->
         <a href="pdfs/circle/series/a/ser52.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 52(a): Куда выведет нас кривая...</span>
         </a> 
         <!-- Серия 51    -->
         <a href="pdfs/circle/series/a/ser51.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 51(a): Функциональная.</span>
         </a> 
 
         <!-- Серия 50 -->
         <a href="pdfs/circle/series/a/ser50.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 50(a): Вернёмся к нашим баранам.</span>
         </a> 
         <!-- Серия 49 -->
         <a href="pdfs/circle/series/a/ser49.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 49(a): Рождество в Мае.</span>
         </a> 
         <!-- Серия 48 -->
         <a href="pdfs/circle/series/a/ser48.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 48(a): постепенно возвращаемся к нашим недостаткам.</span>
         </a> 
         <!-- Серия 47 -->
         <a href="pdfs/circle/series/a/ser47.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 47(a): просто посчитать.</span>
         </a> 
          <!-- Серия 46 -->
         <a href="pdfs/circle/series/a/ser46.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 46(a): геометрические неравенства и нехитрая арифметика.</span>
         </a> 
          <!-- Серия 45 -->
         <a href="pdfs/circle/series/a/ser45.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 45(a): простые задачи, полезная геометрия.</span>
         </a> 
         <!-- Серия 44 -->
         <a href="pdfs/circle/series/a/ser44.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 44(a): Развивающая комбинаторика.</span>
         </a>   
         <!-- Серия 43 -->
         <a href="pdfs/circle/series/a/ser43.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 43(a): Лес расходящихся тропок.</span>
         </a>   
         <!-- Серия 42 -->
         <a href="pdfs/circle/series/a/ser42.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 42(a): Продолжим!</span>
         </a>    
         <!-- Серия 41 -->
         <a href="pdfs/circle/series/a/ser41.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 41(a): Давно не было геометрии: направленные углы!</span>
         </a>
         <!-- Серия 40 -->
         <a href="pdfs/circle/series/a/ser40.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 40(a): Последовательности и неравенства.</span>
         </a>
         <!-- Серия 39 -->
         <a href="pdfs/circle/series/a/ser39.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 39(a): Ряды и еще одна идея.</span>
         </a>
         <!-- Серия 38 -->
         <a href="pdfs/circle/series/a/ser38.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 38(a): Возвращение джедая.</span>
         </a>
         <!-- Серия 37 -->
         <a href="pdfs/circle/series/a/ser37.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 37(a):  Полный беспредел, часть II.</span>
         </a>
         <!-- Серия 36 -->
         <a href="pdfs/circle/series/a/ser36.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 36(a):  Полный беспредел.</span>
         </a>
         <!-- Серия 35 -->
         <a href="pdfs/circle/series/a/ser35.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 35(a):  С древними инструментами.</span>
         </a>
         <!-- Серия 34 -->
         <a href="pdfs/circle/series/a/ser34.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 34(a): Последовательно.</span>
         </a>
 
         <!-- Серия 33 -->
         <a href="pdfs/circle/series/a/ser33.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 33(a): Карл Вейерштрасс и двое милиционеров.</span>
         </a>
 
         <!-- ликбез: vfnfy -->
         <a href="pdfs/circle/series/a/likbez_matan.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Ликбез по математическому анализу, ч.1</span>
         </a>
 
         <!-- Серия 32 -->
         <a href="pdfs/circle/series/a/ser32.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 32(a): У всего есть предел: в том числе у печали.</span>
         </a>
         <!-- Серия 31 -->
         <a href="pdfs/circle/series/a/ser31.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 31(a): вызывающая желание узнать, что же такое вещественное число.</span>
         </a>
         <!-- Серия 30 -->
         <a href="pdfs/circle/series/a/ser30.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 30(a): Штурм и еще одна полезная идея</span>
         </a>
         <!-- ликбез: метод Штурма -->
         <a href="pdfs/circle/series/a/sturm.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Ликбез: метод Штурма</span>
         </a>
          <!-- Серия 29 -->
         <a href="pdfs/circle/series/a/ser29.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 29(a): движение – всё, цель – ничто.</span>
         </a>
 
@@ -381,7 +223,7 @@
         <!-- Пример для новой серии -->
         <!--
         <a href="pdfs/circle/series7.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 7: Название новой серии</span>
         </a>
         -->
@@ -391,74 +233,74 @@
     
     <div class="materials-list">
         <a href="pdfs/circle/series/b/ser46.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 46(b). Лучше жить в глухой провинции у моря... </span>
         </a> 
 
         <a href="pdfs/circle/series/b/ser45.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 45(b). Немного комбинаторики и одна (новая?) идея </span>
         </a> 
 
         <a href="pdfs/circle/series/b/ser44.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 44(b), перестановки, игры, инварианты. </span>
         </a> 
         <a href="pdfs/circle/series/b/ser43.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 43(b), с теоремой об инверсиях. </span>
         </a> 
          <a href="pdfs/circle/series/b/ser42.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 42(b). Клетки, игры, инварианты. </span>
         </a> 
 
          <a href="pdfs/circle/series/b/ser41.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 41(b). Элементы. </span>
         </a> 
         <a href="pdfs/circle/series/b/ser40.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 40(b). Для закрепления арифметики. </span>
         </a> 
         <a href="pdfs/circle/series/b/ser39.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 39(b), А теперь мы всем этим воспользуемся. </span>
         </a> 
         <a href="pdfs/circle/series/b/ser38.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 38(b), в которой много Эйлера. </span>
         </a> 
          <a href="pdfs/circle/series/b/ser37.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 37(b). Поворот на Восток. </span>
         </a> 
         <a href="pdfs/circle/series/b/ser36.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 36(b). Урок истории. </span>
         </a> 
         <a href="pdfs/circle/series/b/ser35.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 35(b). Воспоминания о вычетах. </span>
         </a> 
         <a href="pdfs/circle/series/b/bilety_6.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Билеты к зачёту по графам.  </span>
         </a> 
         <a href="pdfs/circle/series/b/ser34.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 34(b). Базовые идеи. </span>
         </a> 
         <a href="pdfs/circle/series/b/ser33.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 33(b). Базовые факты. </span>
         </a> 
         <a href="pdfs/circle/series/b/ser32.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 32(b). С деревьями. </span>
         </a> 
         <a href="pdfs/circle/series/b/ser31.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 31(b). Джентльмены графства Липшир. </span>
         </a> 
        
@@ -467,7 +309,7 @@
         <!-- Пример для новой серии -->
         <!--
         <a href="pdfs/circle/series7.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 7: Название новой серии</span>
         </a>
         -->
@@ -478,17 +320,17 @@
     <div class="materials-list">
         <!-- лагерь 2026 -->
         <a href="pdfs/circle/theory/camp_2026.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Лагерь 2026: Многочлены и немного теории чисел. </span>
         </a>
         <!-- лагерь 2025 -->
         <a href="pdfs/circle/theory/camp_2025.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Лагерь 2025: Векторы, комплексные числа, тригонометрия. </span>
         </a>
         <!-- лагерь 2024 -->
         <a href="pdfs/circle/theory/camp_2024.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Лагерь 2024: Арифметика. </span>
         </a>
       
@@ -498,7 +340,7 @@
         <!-- Пример для новой серии -->
         <!--
         <a href="pdfs/circle/series7.pdf" class="pdf-link">
-            <span class="pdf-icon">[PDF]</span>
+
             <span>Серия 7: Название новой серии</span>
         </a>
         -->
